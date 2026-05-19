@@ -16,6 +16,203 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+
+        /* ABOUT SPACING */
+        .about-section{
+
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT TEXT */
+        .about-text{
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 25px;
+
+            padding: 35px;
+
+            text-align: center;
+
+            line-height: 1.9;
+
+            color: #dcdcdc;
+
+            font-size: 18px;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.4s ease;
+        }
+
+        .about-text:hover{
+
+            transform: translateY(-6px);
+
+            border-color: rgba(255,0,0,0.4);
+
+            box-shadow: 0 15px 35px rgba(255,0,0,0.2);
+        }
+
+        /* EDUCATION */
+        .education-section{
+
+            margin-top: 20px;
+        }
+
+        .education-grid{
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+            gap: 25px;
+        }
+
+        .education-card{
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 25px;
+
+            padding: 35px;
+
+            text-align: center;
+
+            transition: 0.4s ease;
+
+            backdrop-filter: blur(10px);
+        }
+
+        .education-card:hover{
+
+            transform: translateY(-8px);
+
+            border-color: rgba(255,0,0,0.5);
+
+            box-shadow: 0 20px 40px rgba(255,0,0,0.2);
+        }
+
+        .education-card i{
+
+            font-size: 45px;
+
+            color: #ff2a2a;
+
+            margin-bottom: 18px;
+        }
+
+        .education-card h2{
+
+            margin-bottom: 12px;
+
+            font-size: 24px;
+        }
+
+        .education-card p{
+
+            color: #d5d5d5;
+
+            line-height: 1.8;
+        }
+
+        /* CERTIFICATE */
+        .certificate-section{
+
+            margin-top: 70px;
+        }
+
+        .certificate-grid{
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+            gap: 30px;
+        }
+
+        .certificate-card{
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            transition: 0.4s ease;
+
+            backdrop-filter: blur(10px);
+        }
+
+        .certificate-card:hover{
+
+            transform: translateY(-10px);
+
+            border-color: rgba(255,0,0,0.5);
+
+            box-shadow: 0 20px 40px rgba(255,0,0,0.25);
+        }
+
+        .certificate-card img{
+
+            width: 100%;
+
+            height: 230px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .certificate-info{
+
+            padding: 20px;
+        }
+
+        .certificate-info h3{
+
+            margin-bottom: 10px;
+
+            color: white;
+        }
+
+        .certificate-info p{
+
+            color: #d0d0d0;
+
+            line-height: 1.7;
+        }
+
+        /* MOBILE */
+        @media screen and (max-width:900px){
+
+            .about-text{
+
+                font-size: 16px;
+
+                padding: 28px;
+            }
+
+            .education-card{
+
+                padding: 28px;
+            }
+
+            .certificate-card img{
+
+                height: 200px;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -40,84 +237,149 @@
     <!-- ABOUT -->
     <section class="page-container fade-up">
 
-        <h1 class="title">
-            ABOUT ME
-        </h1>
+        <!-- ABOUT ME -->
+        <div class="about-section">
 
-        <!-- ABOUT CARD -->
-        <div class="card">
+            <h1 class="title">
+                ABOUT ME
+            </h1>
 
-            <i class="fa-solid fa-user"></i>
+            <div class="about-text">
 
-            <p>
                 Fourth-year Computer Engineering student with passion
-                for programming and technology development.
-            </p>
+                for programming, innovation and technology development.
+                Experienced in teamwork, problem solving and application
+                development.
 
-        </div>
+                <br><br>
 
-        <!-- UNIVERSITY CARD -->
-        <div class="card">
-
-            <i class="fa-solid fa-graduation-cap"></i>
-
-            <p>
                 Lampang Rajabhat University
                 <br>
                 Bachelor of Engineering
                 <br>
                 GPA : 2.95
-            </p>
+
+            </div>
 
         </div>
 
-    </section>
+        <!-- EDUCATION -->
+        <div class="education-section">
 
-    <!-- EDUCATION -->
-    <section class="page-container fade-up">
+            <h1 class="title">
+                EDUCATION
+            </h1>
 
-        <h1 class="title">
-            EDUCATION
-        </h1>
+            <div class="education-grid">
 
-        <div class="skills-grid">
+                <div class="education-card">
 
-            <!-- SCHOOL -->
-            <div class="skill-card">
+                    <i class="fa-solid fa-school"></i>
 
-                <i class="fa-solid fa-school"></i>
+                    <h2>Ban Nong Nguak School</h2>
 
-                <h2>Ban Nong Nguak School</h2>
+                    <p>
+                        2012 - 2020
+                    </p>
 
-                <p>
-                    2012 - 2020
-                </p>
+                </div>
+
+                <div class="education-card">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                    <h2>Lamphun Technical College</h2>
+
+                    <p>
+                        2020 - 2022
+                    </p>
+
+                </div>
+
+                <div class="education-card">
+
+                    <i class="fa-solid fa-university"></i>
+
+                    <h2>Lampang Rajabhat University</h2>
+
+                    <p>
+                        2023 - 2026
+                    </p>
+
+                </div>
 
             </div>
 
-            <!-- COLLEGE -->
-            <div class="skill-card">
+        </div>
 
-                <i class="fa-solid fa-building-columns"></i>
+        <!-- CERTIFICATES -->
+        <div class="certificate-section">
 
-                <h2>Lamphun Technical College</h2>
+            <h1 class="title">
+                CERTIFICATES
+            </h1>
 
-                <p>
-                    2020 - 2022
-                </p>
+            <div class="certificate-grid">
 
-            </div>
+                <!-- CERTIFICATE 1 -->
+                <div class="certificate-card">
 
-            <!-- UNIVERSITY -->
-            <div class="skill-card">
+                    <img src="certificate1.jpg"
+                    alt="Certificate 1">
 
-                <i class="fa-solid fa-university"></i>
+                    <div class="certificate-info">
 
-                <h2>Lampang Rajabhat University</h2>
+                        <h3>
+                            Certificate 1
+                        </h3>
 
-                <p>
-                    2023 - 2026
-                </p>
+                        <p>
+                            Add your certificate details here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CERTIFICATE 2 -->
+                <div class="certificate-card">
+
+                    <img src="certificate2.jpg"
+                    alt="Certificate 2">
+
+                    <div class="certificate-info">
+
+                        <h3>
+                            Certificate 2
+                        </h3>
+
+                        <p>
+                            Add your certificate details here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CERTIFICATE 3 -->
+                <div class="certificate-card">
+
+                    <img src="certificate3.jpg"
+                    alt="Certificate 3">
+
+                    <div class="certificate-info">
+
+                        <h3>
+                            Certificate 3
+                        </h3>
+
+                        <p>
+                            Add your certificate details here.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
