@@ -16,12 +16,165 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+
+        /* CONTACT CARD LINK */
+        .contact-card-link{
+
+            text-decoration: none;
+
+            color: white;
+
+            display: block;
+        }
+
+        /* CARD */
+        .contact-card{
+
+            position: relative;
+
+            overflow: hidden;
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            transition: 0.45s ease;
+
+            backdrop-filter: blur(10px);
+
+            cursor: pointer;
+        }
+
+        /* LIGHT EFFECT */
+        .contact-card::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 200%;
+
+            height: 200%;
+
+            background:
+                radial-gradient(
+                    rgba(255,0,0,0.2),
+                    transparent 70%
+                );
+
+            top: -150%;
+
+            left: -150%;
+
+            transition: 0.7s ease;
+        }
+
+        /* HOVER */
+        .contact-card:hover{
+
+            transform:
+                translateY(-10px)
+                scale(1.02);
+
+            border-color: rgba(255,0,0,0.6);
+
+            box-shadow:
+                0 0 25px rgba(255,0,0,0.35),
+                0 0 60px rgba(255,0,0,0.18);
+        }
+
+        /* MOVE LIGHT */
+        .contact-card:hover::before{
+
+            top: -30%;
+
+            left: -30%;
+        }
+
+        /* ICON */
+        .contact-card i{
+
+            font-size: 55px;
+
+            color: #ff2a2a;
+
+            margin-bottom: 20px;
+
+            transition: 0.4s ease;
+        }
+
+        /* ICON HOVER */
+        .contact-card:hover i{
+
+            transform:
+                scale(1.15)
+                rotate(8deg);
+
+            color: #ff4d4d;
+
+            text-shadow:
+                0 0 20px rgba(255,0,0,0.7);
+        }
+
+        /* TITLE */
+        .contact-card h2{
+
+            margin-bottom: 12px;
+
+            color: white;
+
+            transition: 0.3s ease;
+        }
+
+        /* TEXT */
+        .contact-card p{
+
+            color: #d8d8d8;
+
+            font-size: 17px;
+
+            transition: 0.3s ease;
+
+            word-break: break-word;
+        }
+
+        /* TEXT HOVER */
+        .contact-card:hover h2,
+        .contact-card:hover p{
+
+            color: #ffffff;
+        }
+
+        /* MOBILE */
+        @media screen and (max-width:900px){
+
+            .contact-card{
+
+                padding: 30px 20px;
+            }
+
+            .contact-card i{
+
+                font-size: 45px;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
+
         <!-- MENU -->
         <ul class="nav-links">
 
@@ -49,52 +202,59 @@
         <div class="contact-grid">
 
             <!-- PHONE -->
-            <div class="contact-card">
+            <a href="tel:0645658812"
+            class="contact-card-link">
 
-                <i class="fa-solid fa-phone"></i>
+                <div class="contact-card">
 
-                <h2>Phone</h2>
+                    <i class="fa-solid fa-phone"></i>
 
-                <p>
-                    <a href="tel:0645658812" class="contact-link">
+                    <h2>Phone</h2>
+
+                    <p>
                         064-565-8812
-                    </a>
-                </p>
+                    </p>
 
-            </div>
+                </div>
+
+            </a>
 
             <!-- EMAIL -->
-            <div class="contact-card">
+            <a href="mailto:phadungkeart.cws@gmail.com"
+            class="contact-card-link">
 
-                <i class="fa-solid fa-envelope"></i>
+                <div class="contact-card">
 
-                <h2>Email</h2>
+                    <i class="fa-solid fa-envelope"></i>
 
-                <p>
-                    <a href="mailto:phadungkeart.cws@gmail.com"
-                    class="contact-link">
+                    <h2>Email</h2>
+
+                    <p>
                         phadungkeart.cws@gmail.com
-                    </a>
-                </p>
+                    </p>
 
-            </div>
+                </div>
+
+            </a>
 
             <!-- WEBSITE -->
-            <div class="contact-card">
+            <a href="https://phadungkeartcws-dev.github.io/florio/"
+            target="_blank"
+            class="contact-card-link">
 
-                <i class="fa-solid fa-globe"></i>
+                <div class="contact-card">
 
-                <h2>Website</h2>
+                    <i class="fa-solid fa-globe"></i>
 
-                <p>
-                    <a href="https://phadungkeartcws-dev.github.io/florio/"
-                    target="_blank"
-                    class="contact-link">
+                    <h2>Website</h2>
+
+                    <p>
                         Visit My Portfolio
-                    </a>
-                </p>
+                    </p>
 
-            </div>
+                </div>
+
+            </a>
 
         </div>
 

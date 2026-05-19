@@ -16,12 +16,80 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+
+        /* TITLE */
+        .hero-text h1{
+
+            font-size: 78px;
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+
+            font-weight: 700;
+        }
+
+        /* NAME COLOR */
+        .hero-text span{
+
+            background: linear-gradient(
+                45deg,
+                #ffffff,
+                #ffb3b3,
+                #ff2a2a,
+                #ffffff
+            );
+
+            background-size: 300% 300%;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation: glowText 6s ease infinite;
+
+            text-shadow:
+                0 0 15px rgba(255,0,0,0.25);
+
+            transition: 0.4s ease;
+        }
+
+        /* HOVER */
+        .hero-text span:hover{
+
+            filter: brightness(1.2);
+
+            text-shadow:
+                0 0 20px rgba(255,0,0,0.6),
+                0 0 40px rgba(255,0,0,0.3);
+        }
+
+        /* ANIMATION */
+        @keyframes glowText{
+
+            0%{
+                background-position: 0% 50%;
+            }
+
+            50%{
+                background-position: 100% 50%;
+            }
+
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
+
         <!-- MENU -->
         <ul class="nav-links">
 
@@ -79,10 +147,6 @@
                 for programming, innovation and technology development.
                 Experienced in teamwork, problem solving and application development.
             </p>
-
-            <a href="about.html" class="btn">
-                Explore Portfolio
-            </a>
 
         </div>
 
