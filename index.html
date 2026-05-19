@@ -35,55 +35,15 @@
 
             display: inline-block;
 
-            background: linear-gradient(
-                45deg,
-                #ffffff,
-                #ffb3b3,
-                #ff2a2a,
-                #ffffff
-            );
+            color: white;
 
-            background-size: 300% 300%;
-
-            background-clip: text;
-
-            -webkit-background-clip: text;
-
-            color: transparent;
-
-            -webkit-text-fill-color: transparent;
-
-            animation: glowText 6s ease infinite;
-
-            transition: 0.4s ease;
+            transition: color 0.4s ease;
         }
 
-        /* HOVER EFFECT */
+        /* HOVER COLOR */
         .hero-text span:hover{
 
-            transform: scale(1.03);
-
-            filter: brightness(1.2);
-
-            text-shadow:
-                0 0 20px rgba(255,0,0,0.5),
-                0 0 40px rgba(255,255,255,0.3);
-        }
-
-        /* ANIMATION */
-        @keyframes glowText{
-
-            0%{
-                background-position: 0% 50%;
-            }
-
-            50%{
-                background-position: 100% 50%;
-            }
-
-            100%{
-                background-position: 0% 50%;
-            }
+            color: #ff2a2a;
         }
 
     </style>
