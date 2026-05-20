@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,10 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-    <title>Phadungkeart Portfolio</title>
+    <title>Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -16,41 +18,6 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-
-        /* TITLE */
-        .hero-text h1{
-
-            font-size: 78px;
-
-            line-height: 1.1;
-
-            margin-bottom: 20px;
-
-            font-weight: 700;
-
-            color: white;
-
-            transition: color 0.4s ease;
-        }
-
-        /* HOVER BOTH NAME */
-        .hero-text h1:hover{
-
-            color: #ff2a2a;
-        }
-
-        /* MOBILE */
-        @media screen and (max-width:900px){
-
-            .hero-text h1{
-
-                font-size: 48px;
-            }
-        }
-
-    </style>
-
 </head>
 
 <body>
@@ -58,11 +25,15 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
-        <!-- MENU -->
+        <div class="logo">
+            PORTFOLIO
+        </div>
+
         <ul class="nav-links">
 
             <li>
-                <a href="index.html" class="active">
+                <a href="index.html"
+                class="active">
                     Home
                 </a>
             </li>
@@ -90,14 +61,17 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero fade-up">
 
         <!-- TEXT -->
-        <div class="hero-text fade-up">
+        <div class="hero-text">
 
             <h1>
-                PHADUNGKEART<br>
-                CHAIWONGSA
+                Hello I'm
+                <br>
+                <span>
+                    Phadungkeart
+                </span>
             </h1>
 
             <h3>
@@ -105,30 +79,74 @@
             </h3>
 
             <p>
-                Fourth-year computer engineering students interested 
-                in programming, innovation, and technology development
-                with teamwork and problem-solving skills.
+                I am studying at
+                Lampang Rajabhat University
+                in Computer Engineering.
+                I am interested in
+                programming, networking,
+                web development,
+                and digital technology.
             </p>
+
+            <!-- POSITION -->
+            <div class="job-section">
+
+                <h2>
+                    Position Interested
+                </h2>
+
+                <div class="job-grid">
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>Network</span>
+                    </div>
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>IT Support</span>
+                    </div>
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <span>Digital Media</span>
+                    </div>
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Programmer</span>
+                    </div>
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Frontend</span>
+                    </div>
+
+                    <div class="job-card">
+                        <i class="fa-solid fa-server"></i>
+                        <span>Backend</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="about.html"
+            class="btn">
+                About Me
+            </a>
 
         </div>
 
         <!-- IMAGE -->
-        <div class="hero-image fade-up">
+        <div class="hero-image">
 
-            <img src="profile.png" alt="Profile Image">
+            <img src="profile.jpg"
+            alt="Profile">
 
         </div>
 
     </section>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            © 2026 PHADUNGKEART PORTFOLIO
-        </p>
-
-    </footer>
 
     <!-- JS -->
     <script src="script.js"></script>
@@ -136,3 +154,84 @@
 </body>
 
 </html>
+```
+
+เพิ่ม CSS นี้ใน `style.css`
+
+```css
+/* JOB SECTION */
+.job-section{
+    margin-top: 35px;
+}
+
+/* JOB TITLE */
+.job-section h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff2a2a;
+}
+
+/* JOB GRID */
+.job-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 18px;
+}
+
+/* JOB CARD */
+.job-card{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 22px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease;
+}
+
+/* JOB HOVER */
+.job-card:hover{
+    transform: translateY(-8px);
+    border-color: rgba(255,0,0,0.5);
+    box-shadow: 0 15px 30px rgba(255,0,0,0.25);
+}
+
+/* JOB ICON */
+.job-card i{
+    font-size: 38px;
+    color: #ff2a2a;
+    margin-bottom: 12px;
+}
+
+/* JOB TEXT */
+.job-card span{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+/* MOBILE */
+@media screen and (max-width:900px){
+
+    .job-section h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .job-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .job-card{
+        padding: 18px;
+    }
+
+    .job-card i{
+        font-size: 30px;
+    }
+
+    .job-card span{
+        font-size: 15px;
+    }
+}
+```
