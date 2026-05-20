@@ -204,6 +204,89 @@
             line-height: 1.7;
         }
 
+        /* WORK SECTION */
+        .work-section{
+
+            margin-top: 80px;
+        }
+
+        .work-card{
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.4s ease;
+        }
+
+        .work-card:hover{
+
+            transform: translateY(-10px);
+
+            border-color: rgba(255,0,0,0.5);
+
+            box-shadow: 0 20px 40px rgba(255,0,0,0.25);
+        }
+
+        .work-card i{
+
+            font-size: 60px;
+
+            color: #ff2a2a;
+
+            margin-bottom: 20px;
+        }
+
+        .work-card h2{
+
+            margin-bottom: 15px;
+
+            font-size: 28px;
+        }
+
+        .work-card p{
+
+            color: #d0d0d0;
+
+            margin-bottom: 25px;
+
+            line-height: 1.8;
+        }
+
+        .work-btn{
+
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            background: linear-gradient(45deg,#ff0000,#ff3b3b);
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 14px;
+
+            font-weight: 600;
+
+            transition: 0.35s ease;
+        }
+
+        .work-btn:hover{
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 15px 30px rgba(255,0,0,0.4);
+        }
+
         /* MOBILE */
         @media screen and (max-width:900px){
 
@@ -227,6 +310,11 @@
             .certificate-grid{
 
                 grid-template-columns: 1fr;
+            }
+
+            .work-card{
+
+                padding: 30px 20px;
             }
         }
 
@@ -286,7 +374,6 @@
 
             <div class="education-grid">
 
-                <!-- SCHOOL -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-school"></i>
@@ -301,7 +388,6 @@
 
                 </div>
 
-                <!-- COLLEGE -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-building-columns"></i>
@@ -316,7 +402,6 @@
 
                 </div>
 
-                <!-- UNIVERSITY -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-university"></i>
@@ -487,6 +572,37 @@
                     </div>
 
                 </div>
+
+            </div>
+
+        </div>
+
+        <!-- WORK -->
+        <div class="work-section">
+
+            <h1 class="title">
+                WORK
+            </h1>
+
+            <div class="work-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h2>
+                    Cisco Work
+                </h2>
+
+                <p>
+                    View my Cisco networking and lab work files on GitHub.
+                </p>
+
+                <a href="https://github.com/phadungkeartcws-dev/Cisco-work/upload"
+                target="_blank"
+                class="work-btn">
+
+                    Open Work
+
+                </a>
 
             </div>
 
