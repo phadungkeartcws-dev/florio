@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,10 +24,12 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
+        <!-- LOGO -->
         <div class="logo">
             PORTFOLIO
         </div>
 
+        <!-- MENU -->
         <ul class="nav-links">
 
             <li>
@@ -69,6 +70,7 @@
             <h1>
                 Hello I'm
                 <br>
+
                 <span>
                     Phadungkeart
                 </span>
@@ -89,48 +91,79 @@
             </p>
 
             <!-- POSITION -->
-            <div class="job-section">
+            <div class="position-section">
 
-                <h2>
+                <h2 class="position-title">
                     Position Interested
                 </h2>
 
-                <div class="job-grid">
+                <div class="position-grid">
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-network-wired"></i>
-                        <span>Network</span>
+
+                        <span>
+                            Network
+                        </span>
+
                     </div>
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-headset"></i>
-                        <span>IT Support</span>
+
+                        <span>
+                            IT Support
+                        </span>
+
                     </div>
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-photo-film"></i>
-                        <span>Digital Media</span>
+
+                        <span>
+                            Digital Media
+                        </span>
+
                     </div>
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-code"></i>
-                        <span>Programmer</span>
+
+                        <span>
+                            Programmer
+                        </span>
+
                     </div>
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-laptop-code"></i>
-                        <span>Frontend</span>
+
+                        <span>
+                            Frontend
+                        </span>
+
                     </div>
 
-                    <div class="job-card">
+                    <div class="position-card">
+
                         <i class="fa-solid fa-server"></i>
-                        <span>Backend</span>
+
+                        <span>
+                            Backend
+                        </span>
+
                     </div>
 
                 </div>
 
             </div>
 
+            <!-- BUTTON -->
             <a href="about.html"
             class="btn">
                 About Me
@@ -154,83 +187,3 @@
 </body>
 
 </html>
-```
-
-เพิ่ม CSS นี้ใน `style.css`
-
-```css
-/* JOB SECTION */
-.job-section{
-    margin-top: 35px;
-}
-
-/* JOB TITLE */
-.job-section h2{
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #ff2a2a;
-}
-
-/* JOB GRID */
-.job-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    gap: 18px;
-}
-
-/* JOB CARD */
-.job-card{
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 20px;
-    padding: 22px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    transition: 0.4s ease;
-}
-
-/* JOB HOVER */
-.job-card:hover{
-    transform: translateY(-8px);
-    border-color: rgba(255,0,0,0.5);
-    box-shadow: 0 15px 30px rgba(255,0,0,0.25);
-}
-
-/* JOB ICON */
-.job-card i{
-    font-size: 38px;
-    color: #ff2a2a;
-    margin-bottom: 12px;
-}
-
-/* JOB TEXT */
-.job-card span{
-    font-size: 17px;
-    font-weight: 500;
-    color: white;
-}
-
-/* MOBILE */
-@media screen and (max-width:900px){
-
-    .job-section h2{
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .job-grid{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .job-card{
-        padding: 18px;
-    }
-
-    .job-card i{
-        font-size: 30px;
-    }
-
-    .job-card span{
-        font-size: 15px;
-    }
-}
