@@ -21,7 +21,7 @@
         /* ABOUT SPACING */
         .about-section{
 
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
 
         /* ABOUT TEXT */
@@ -60,7 +60,7 @@
         /* EDUCATION */
         .education-section{
 
-            margin-top: 25px;
+            margin-top: 30px;
         }
 
         .education-grid{
@@ -131,7 +131,7 @@
 
             display: grid;
 
-            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 
             gap: 30px;
         }
@@ -160,6 +160,11 @@
             box-shadow: 0 20px 40px rgba(255,0,0,0.25);
         }
 
+        .certificate-card a{
+
+            display: block;
+        }
+
         .certificate-card img{
 
             width: 100%;
@@ -169,6 +174,13 @@
             object-fit: cover;
 
             display: block;
+
+            transition: 0.4s ease;
+        }
+
+        .certificate-card:hover img{
+
+            transform: scale(1.03);
         }
 
         .certificate-info{
@@ -181,6 +193,8 @@
             margin-bottom: 10px;
 
             color: white;
+
+            font-size: 22px;
         }
 
         .certificate-info p{
@@ -208,6 +222,11 @@
             .certificate-card img{
 
                 height: 200px;
+            }
+
+            .certificate-grid{
+
+                grid-template-columns: 1fr;
             }
         }
 
@@ -245,11 +264,15 @@
             </h1>
 
             <div class="about-text">
+
                 Lampang Rajabhat University
                 <br>
+
                 Computer Engineering Student
                 <br>
+
                 GPA : 2.95
+
             </div>
 
         </div>
@@ -263,11 +286,14 @@
 
             <div class="education-grid">
 
+                <!-- SCHOOL -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-school"></i>
 
-                    <h2>Ban Nong Nguak School</h2>
+                    <h2>
+                        Ban Nong Nguak School
+                    </h2>
 
                     <p>
                         2012 - 2020
@@ -275,11 +301,14 @@
 
                 </div>
 
+                <!-- COLLEGE -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-building-columns"></i>
 
-                    <h2>Lamphun Technical College</h2>
+                    <h2>
+                        Lamphun Technical College
+                    </h2>
 
                     <p>
                         2020 - 2022
@@ -287,11 +316,14 @@
 
                 </div>
 
+                <!-- UNIVERSITY -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-university"></i>
 
-                    <h2>Lampang Rajabhat University</h2>
+                    <h2>
+                        Lampang Rajabhat University
+                    </h2>
 
                     <p>
                         2023 - 2026
@@ -312,145 +344,148 @@
 
             <div class="certificate-grid">
 
-        <!-- CERTIFICATE 1 -->
-        <div class="certificate-card">
+                <!-- CERTIFICATE 1 -->
+                <div class="certificate-card">
 
-            <a href="certificate1.png" target="_blank">
+                    <a href="certificate1.png" target="_blank">
 
-            <img src="certificate1.png"
-            alt="Certificate 1">
+                        <img src="certificate1.png"
+                        alt="Certificate 1">
 
-            </a>
+                    </a>
 
-        <div class="certificate-info">
+                    <div class="certificate-info">
 
-        <h3>
-            Certificate 1
-        </h3>
+                        <h3>
+                            Certificate 1
+                        </h3>
 
-        <p>
-            Chat GPT for Education Training
-        </p>
+                        <p>
+                            Chat GPT for Education Training
+                        </p>
 
-    </div>
+                    </div>
 
-</div>
+                </div>
 
-        <!-- CERTIFICATE 2 -->
-        <div class="certificate-card">
+                <!-- CERTIFICATE 2 -->
+                <div class="certificate-card">
 
-        <a href="certificate2.png" target="_blank">
+                    <a href="certificate2.png" target="_blank">
 
-        <img src="certificate2.png"
-        alt="Certificate 2">
+                        <img src="certificate2.png"
+                        alt="Certificate 2">
 
-    </a>
+                    </a>
 
-    <div class="certificate-info">
+                    <div class="certificate-info">
 
-        <h3>
-            Certificate 2
-        </h3>
+                        <h3>
+                            Certificate 2
+                        </h3>
 
-        <p>
-            IC3 Digital Literacy Certification
-        </p>
+                        <p>
+                            IC3 Digital Literacy Certification
+                        </p>
 
-    </div>
+                    </div>
 
-</div>
+                </div>
 
-        <!-- CERTIFICATE 3 -->
-        <div class="certificate-card">
+                <!-- CERTIFICATE 3 -->
+                <div class="certificate-card">
 
-            <a href="certificate3.png" target="_blank">
+                    <a href="certificate3.png" target="_blank">
 
-            <img src="certificate3.png"
-            alt="Certificate 3">
+                        <img src="certificate3.png"
+                        alt="Certificate 3">
 
-            </a>
+                    </a>
 
-        <div class="certificate-info">
+                    <div class="certificate-info">
 
-        <h3>
-            Certificate 3
-        </h3>
+                        <h3>
+                            Certificate 3
+                        </h3>
 
-        <p>
-            E-Sport Arena of Valor Competition
-        </p>
+                        <p>
+                            E-Sport Arena of Valor Competition
+                        </p>
 
-        </div>
-        <!-- CERTIFICATE 1 -->
-        <div class="certificate-card">
+                    </div>
 
-        <a href="certificate4.png" target="_blank">
+                </div>
 
-        <img src="certificate4.png"
-        alt="Certificate 4">
+                <!-- CERTIFICATE 4 -->
+                <div class="certificate-card">
 
-        </a>
+                    <a href="certificate4.png" target="_blank">
 
-        <div class="certificate-info">
+                        <img src="certificate4.png"
+                        alt="Certificate 4">
 
-        <h3>
-            Certificate 4
-        </h3>
+                    </a>
 
-        <p>
-            Academic Results
-        </p>
+                    <div class="certificate-info">
 
-    </div>
+                        <h3>
+                            Certificate 4
+                        </h3>
 
-</div>
-<!-- CERTIFICATE 5 -->
-<div class="certificate-card">
+                        <p>
+                            Academic Results
+                        </p>
 
-    <a href="certificate5.png" target="_blank">
+                    </div>
 
-        <img src="certificate5.png"
-        alt="Certificate 5">
+                </div>
 
-    </a>
+                <!-- CERTIFICATE 5 -->
+                <div class="certificate-card">
 
-    <div class="certificate-info">
+                    <a href="certificate5.png" target="_blank">
 
-        <h3>
-            Certificate 5
-        </h3>
+                        <img src="certificate5.png"
+                        alt="Certificate 5">
 
-        <p>
-            Academic Results
-        </p>
+                    </a>
 
-    </div>
+                    <div class="certificate-info">
 
-</div>
-<!-- CERTIFICATE 6 -->
-<div class="certificate-card">
+                        <h3>
+                            Certificate 5
+                        </h3>
 
-    <a href="certificate6.png" target="_blank">
+                        <p>
+                            Academic Results
+                        </p>
 
-        <img src="certificate6.png"
-        alt="Certificate 6">
+                    </div>
 
-    </a>
+                </div>
 
-    <div class="certificate-info">
+                <!-- CERTIFICATE 6 -->
+                <div class="certificate-card">
 
-        <h3>
-            Certificate 6
-        </h3>
+                    <a href="certificate6.png" target="_blank">
 
-        <p>
-            Academic Results
-        </p>
+                        <img src="certificate6.png"
+                        alt="Certificate 6">
 
-    </div>
+                    </a>
 
-</div>
-                        </div>
+                    <div class="certificate-info">
+
+                        <h3>
+                            Certificate 6
+                        </h3>
+
+                        <p>
+                            Academic Results
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
