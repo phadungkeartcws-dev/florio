@@ -210,6 +210,15 @@
             margin-top: 80px;
         }
 
+        .work-grid{
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+
+            gap: 30px;
+        }
+
         .work-card{
 
             background: rgba(255,255,255,0.05);
@@ -243,6 +252,15 @@
             color: #ff2a2a;
 
             margin-bottom: 20px;
+
+            transition: 0.4s ease;
+        }
+
+        .work-card:hover i{
+
+            transform: scale(1.1);
+
+            text-shadow: 0 0 20px rgba(255,0,0,0.6);
         }
 
         .work-card h2{
@@ -250,6 +268,8 @@
             margin-bottom: 15px;
 
             font-size: 28px;
+
+            color: white;
         }
 
         .work-card p{
@@ -312,6 +332,11 @@
                 grid-template-columns: 1fr;
             }
 
+            .work-grid{
+
+                grid-template-columns: 1fr;
+            }
+
             .work-card{
 
                 padding: 30px 20px;
@@ -327,15 +352,39 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
+        <!-- LOGO -->
+        <div class="logo">
+
+            PHADUNGKEART PORTFOLIO
+
+        </div>
+
+        <!-- MENU -->
         <ul class="nav-links">
 
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
 
-            <li><a href="about.html" class="active">About</a></li>
+            <li>
+                <a href="about.html" class="active">
+                    About
+                </a>
+            </li>
 
-            <li><a href="skills.html">Skills</a></li>
+            <li>
+                <a href="skills.html">
+                    Skills
+                </a>
+            </li>
 
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
 
         </ul>
 
@@ -374,6 +423,7 @@
 
             <div class="education-grid">
 
+                <!-- SCHOOL -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-school"></i>
@@ -388,6 +438,7 @@
 
                 </div>
 
+                <!-- COLLEGE -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-building-columns"></i>
@@ -402,6 +453,7 @@
 
                 </div>
 
+                <!-- UNIVERSITY -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-university"></i>
@@ -584,25 +636,53 @@
                 WORK
             </h1>
 
-            <div class="work-card">
+            <div class="work-grid">
 
-                <i class="fa-brands fa-github"></i>
+                <!-- WORK 1 -->
+                <div class="work-card">
 
-                <h2>
-                    Cisco Work
-                </h2>
+                    <i class="fa-brands fa-github"></i>
 
-                <p>
-                    View my Cisco networking and lab work files on GitHub.
-                </p>
+                    <h2>
+                        Cisco Work
+                    </h2>
 
-                <a href="https://github.com/phadungkeartcws-dev/Cisco-work"
-                target="_blank"
-                class="work-btn">
+                    <p>
+                        View my Cisco networking and lab work files on GitHub.
+                    </p>
 
-                    Open Work
+                    <a href="https://github.com/phadungkeartcws-dev/Cisco-work"
+                    target="_blank"
+                    class="work-btn">
 
-                </a>
+                        Open Work
+
+                    </a>
+
+                </div>
+
+                <!-- WORK 2 -->
+                <div class="work-card">
+
+                    <i class="fa-solid fa-file-code"></i>
+
+                    <h2>
+                        Upload Project
+                    </h2>
+
+                    <p>
+                        View uploaded project files and source code.
+                    </p>
+
+                    <a href="https://github.com/phadungkeartcws-dev/Cisco-work/upload"
+                    target="_blank"
+                    class="work-btn">
+
+                        Open Upload
+
+                    </a>
+
+                </div>
 
             </div>
 

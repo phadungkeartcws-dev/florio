@@ -24,9 +24,105 @@
             margin-bottom: 20px;
         }
 
+        /* SOFT SKILLS POSITION */
         .soft-section{
 
-            margin-top: -180px;
+            margin-top: -120px;
+        }
+
+        /* SKILL CARD EFFECT */
+        .skill-card{
+
+            position: relative;
+
+            overflow: hidden;
+
+            cursor: pointer;
+        }
+
+        /* LIGHT EFFECT */
+        .skill-card::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 200%;
+
+            height: 200%;
+
+            background:
+                radial-gradient(
+                    rgba(255,0,0,0.18),
+                    transparent 70%
+                );
+
+            top: -160%;
+
+            left: -160%;
+
+            transition: 0.7s ease;
+        }
+
+        /* HOVER */
+        .skill-card:hover{
+
+            transform:
+                translateY(-10px)
+                scale(1.03);
+
+            border-color:
+                rgba(255,0,0,0.6);
+
+            box-shadow:
+                0 0 25px rgba(255,0,0,0.3),
+                0 0 60px rgba(255,0,0,0.15);
+        }
+
+        /* MOVE LIGHT */
+        .skill-card:hover::before{
+
+            top: -40%;
+
+            left: -40%;
+        }
+
+        /* ICON EFFECT */
+        .skill-card i{
+
+            transition: 0.4s ease;
+        }
+
+        .skill-card:hover i{
+
+            transform:
+                scale(1.15)
+                rotate(8deg);
+
+            color: #ff4d4d;
+
+            text-shadow:
+                0 0 18px rgba(255,0,0,0.7);
+        }
+
+        /* TEXT EFFECT */
+        .skill-card h2{
+
+            transition: 0.3s ease;
+        }
+
+        .skill-card:hover h2{
+
+            color: #ffffff;
+        }
+
+        /* MOBILE */
+        @media screen and (max-width:900px){
+
+            .soft-section{
+
+                margin-top: -70px;
+            }
         }
 
     </style>
@@ -38,15 +134,39 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
+        <!-- LOGO -->
+        <div class="logo">
+
+            PHADUNGKEART PORTFOLIO
+
+        </div>
+
+        <!-- MENU -->
         <ul class="nav-links">
 
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
 
-            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
 
-            <li><a href="skills.html" class="active">Skills</a></li>
+            <li>
+                <a href="skills.html" class="active">
+                    Skills
+                </a>
+            </li>
 
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
 
         </ul>
 
@@ -66,7 +186,9 @@
 
                 <i class="fa-brands fa-html5"></i>
 
-                <h2>HTML</h2>
+                <h2>
+                    HTML
+                </h2>
 
             </div>
 
@@ -75,7 +197,9 @@
 
                 <i class="fa-brands fa-js"></i>
 
-                <h2>JavaScript</h2>
+                <h2>
+                    JavaScript
+                </h2>
 
             </div>
 
@@ -84,7 +208,9 @@
 
                 <i class="fa-solid fa-database"></i>
 
-                <h2>MySQL</h2>
+                <h2>
+                    MySQL
+                </h2>
 
             </div>
 
@@ -93,7 +219,9 @@
 
                 <i class="fa-solid fa-code"></i>
 
-                <h2>C++</h2>
+                <h2>
+                    C++
+                </h2>
 
             </div>
 
@@ -115,7 +243,9 @@
 
                 <i class="fa-solid fa-arrows-rotate"></i>
 
-                <h2>Adaptability</h2>
+                <h2>
+                    Adaptability
+                </h2>
 
             </div>
 
@@ -124,7 +254,9 @@
 
                 <i class="fa-solid fa-clock"></i>
 
-                <h2>Time Management</h2>
+                <h2>
+                    Time Management
+                </h2>
 
             </div>
 
@@ -133,7 +265,9 @@
 
                 <i class="fa-solid fa-comments"></i>
 
-                <h2>Communication Skills</h2>
+                <h2>
+                    Communication Skills
+                </h2>
 
             </div>
 
@@ -142,7 +276,9 @@
 
                 <i class="fa-solid fa-people-group"></i>
 
-                <h2>Teamwork</h2>
+                <h2>
+                    Teamwork
+                </h2>
 
             </div>
 
