@@ -8,7 +8,7 @@
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio</title>
+    <title>Phadungkeart Portfolio</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -17,6 +17,151 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <style>
+
+        /* TITLE */
+        .hero-text h1{
+
+            font-size: 78px;
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+
+            font-weight: 700;
+
+            color: white;
+
+            transition: color 0.4s ease;
+        }
+
+        /* HOVER BOTH NAME */
+        .hero-text h1:hover{
+
+            color: #ff2a2a;
+        }
+
+        /* POSITION SECTION */
+        .position-section{
+
+            margin-top: 35px;
+        }
+
+        /* POSITION TITLE */
+        .position-title{
+
+            font-size: 22px;
+
+            margin-bottom: 18px;
+
+            color: white;
+        }
+
+        /* POSITION GRID */
+        .position-grid{
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+        }
+
+        /* POSITION CARD */
+        .position-card{
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 12px 18px;
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 15px;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.35s ease;
+
+            cursor: pointer;
+        }
+
+        /* ICON */
+        .position-card i{
+
+            color: #ff2a2a;
+
+            font-size: 18px;
+
+            transition: 0.35s ease;
+        }
+
+        /* TEXT */
+        .position-card span{
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 500;
+        }
+
+        /* HOVER */
+        .position-card:hover{
+
+            transform:
+                translateY(-6px)
+                scale(1.05);
+
+            border-color:
+                rgba(255,0,0,0.5);
+
+            box-shadow:
+                0 10px 25px rgba(255,0,0,0.25);
+
+            background:
+                rgba(255,0,0,0.08);
+        }
+
+        /* ICON HOVER */
+        .position-card:hover i{
+
+            transform:
+                rotate(8deg)
+                scale(1.15);
+
+            color: #ff4d4d;
+
+            text-shadow:
+                0 0 15px rgba(255,0,0,0.7);
+        }
+
+        /* MOBILE */
+        @media screen and (max-width:900px){
+
+            .hero-text h1{
+
+                font-size: 48px;
+            }
+
+            .position-grid{
+
+                justify-content: center;
+            }
+
+            .position-title{
+
+                text-align: center;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -24,17 +169,11 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
-        <!-- LOGO -->
-        <div class="logo">
-            PORTFOLIO
-        </div>
-
         <!-- MENU -->
         <ul class="nav-links">
 
             <li>
-                <a href="index.html"
-                class="active">
+                <a href="index.html" class="active">
                     Home
                 </a>
             </li>
@@ -62,18 +201,14 @@
     </nav>
 
     <!-- HERO -->
-    <section class="hero fade-up">
+    <section class="hero">
 
         <!-- TEXT -->
-        <div class="hero-text">
+        <div class="hero-text fade-up">
 
             <h1>
-                Hello I'm
-                <br>
-
-                <span>
-                    Phadungkeart
-                </span>
+                PHADUNGKEART<br>
+                CHAIWONGSA
             </h1>
 
             <h3>
@@ -81,13 +216,9 @@
             </h3>
 
             <p>
-                I am studying at
-                Lampang Rajabhat University
-                in Computer Engineering.
-                I am interested in
-                programming, networking,
-                web development,
-                and digital technology.
+                Fourth-year computer engineering students interested 
+                in programming, innovation, and technology development
+                with teamwork and problem-solving skills.
             </p>
 
             <!-- POSITION -->
@@ -163,23 +294,25 @@
 
             </div>
 
-            <!-- BUTTON -->
-            <a href="about.html"
-            class="btn">
-                About Me
-            </a>
-
         </div>
 
         <!-- IMAGE -->
-        <div class="hero-image">
+        <div class="hero-image fade-up">
 
-            <img src="profile.jpg"
-            alt="Profile">
+            <img src="profile.png" alt="Profile Image">
 
         </div>
 
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 PHADUNGKEART PORTFOLIO
+        </p>
+
+    </footer>
 
     <!-- JS -->
     <script src="script.js"></script>
