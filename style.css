@@ -33,10 +33,15 @@ body{
 
 /* LOGO */
 .logo{
-    font-size:32px;
+    font-size:42px; /* ปรับขนาดตรงนี้ */
     font-weight:700;
     letter-spacing:2px;
     color:#ff2a2a;
+
+    /* ลบเอฟเฟคทั้งหมด */
+    transition:none;
+    transform:none;
+    text-shadow:none;
 }
 
 /* MENU */
@@ -362,6 +367,12 @@ footer{
         flex-direction:column;
         gap:20px;
         padding:20px;
+    }
+
+    /* LOGO */
+    .logo{
+        font-size:32px; /* ขนาดมือถือ */
+        text-align:center;
     }
 
     /* MENU */
