@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -210,16 +211,20 @@
             margin-top: 80px;
         }
 
+        /* WORK GRID */
         .work-grid{
 
-            display: grid;
+            display: flex;
 
-            grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-
-            gap: 30px;
+            justify-content: center;
         }
 
+        /* WORK CARD */
         .work-card{
+
+            width: 100%;
+
+            max-width: 700px;
 
             background: rgba(255,255,255,0.05);
 
@@ -252,15 +257,6 @@
             color: #ff2a2a;
 
             margin-bottom: 20px;
-
-            transition: 0.4s ease;
-        }
-
-        .work-card:hover i{
-
-            transform: scale(1.1);
-
-            text-shadow: 0 0 20px rgba(255,0,0,0.6);
         }
 
         .work-card h2{
@@ -268,8 +264,6 @@
             margin-bottom: 15px;
 
             font-size: 28px;
-
-            color: white;
         }
 
         .work-card p{
@@ -332,11 +326,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .work-grid{
-
-                grid-template-columns: 1fr;
-            }
-
             .work-card{
 
                 padding: 30px 20px;
@@ -352,39 +341,19 @@
     <!-- NAVBAR -->
     <nav class="navbar">
 
-        <!-- LOGO -->
         <div class="logo">
-
             PHADUNGKEART PORTFOLIO
-
         </div>
 
-        <!-- MENU -->
         <ul class="nav-links">
 
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
+            <li><a href="index.html">Home</a></li>
 
-            <li>
-                <a href="about.html" class="active">
-                    About
-                </a>
-            </li>
+            <li><a href="about.html" class="active">About</a></li>
 
-            <li>
-                <a href="skills.html">
-                    Skills
-                </a>
-            </li>
+            <li><a href="skills.html">Skills</a></li>
 
-            <li>
-                <a href="contact.html">
-                    Contact
-                </a>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
 
         </ul>
 
@@ -423,7 +392,6 @@
 
             <div class="education-grid">
 
-                <!-- SCHOOL -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-school"></i>
@@ -438,7 +406,6 @@
 
                 </div>
 
-                <!-- COLLEGE -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-building-columns"></i>
@@ -453,7 +420,6 @@
 
                 </div>
 
-                <!-- UNIVERSITY -->
                 <div class="education-card">
 
                     <i class="fa-solid fa-university"></i>
@@ -481,7 +447,6 @@
 
             <div class="certificate-grid">
 
-                <!-- CERTIFICATE 1 -->
                 <div class="certificate-card">
 
                     <a href="certificate1.png" target="_blank">
@@ -505,7 +470,6 @@
 
                 </div>
 
-                <!-- CERTIFICATE 2 -->
                 <div class="certificate-card">
 
                     <a href="certificate2.png" target="_blank">
@@ -529,7 +493,6 @@
 
                 </div>
 
-                <!-- CERTIFICATE 3 -->
                 <div class="certificate-card">
 
                     <a href="certificate3.png" target="_blank">
@@ -553,7 +516,6 @@
 
                 </div>
 
-                <!-- CERTIFICATE 4 -->
                 <div class="certificate-card">
 
                     <a href="certificate4.png" target="_blank">
@@ -577,7 +539,6 @@
 
                 </div>
 
-                <!-- CERTIFICATE 5 -->
                 <div class="certificate-card">
 
                     <a href="certificate5.png" target="_blank">
@@ -601,7 +562,6 @@
 
                 </div>
 
-                <!-- CERTIFICATE 6 -->
                 <div class="certificate-card">
 
                     <a href="certificate6.png" target="_blank">
@@ -638,7 +598,7 @@
 
             <div class="work-grid">
 
-                <!-- WORK 1 -->
+                <!-- CISCO WORK -->
                 <div class="work-card">
 
                     <i class="fa-brands fa-github"></i>
@@ -661,29 +621,6 @@
 
                 </div>
 
-                <!-- WORK 2 -->
-                <div class="work-card">
-
-                    <i class="fa-solid fa-file-code"></i>
-
-                    <h2>
-                        Upload Project
-                    </h2>
-
-                    <p>
-                        View uploaded project files and source code.
-                    </p>
-
-                    <a href="https://github.com/phadungkeartcws-dev/Cisco-work/upload"
-                    target="_blank"
-                    class="work-btn">
-
-                        Open Upload
-
-                    </a>
-
-                </div>
-
             </div>
 
         </div>
@@ -696,3 +633,4 @@
 </body>
 
 </html>
+```
